@@ -1,6 +1,6 @@
 body{
 
-    background-color: black;
+    background-color: #18191A;
 
 }
 
@@ -8,5 +8,28 @@ body{
 
     color: green;
     font-size: 10rem;
+    font-weight: bold;
+
+}
+
+.btn{
+
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-weight: bold;
+
+}
+
+.maindiv{
+
+    border: 2px solid green;
+
+}
+
+.game{
+
+    display: none;
 
 }
