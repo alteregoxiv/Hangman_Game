@@ -12,7 +12,7 @@ body{
 
 }
 
-.btn{
+.startbutton{
 
     margin-top: 15vh;
     margin-bottom: 2vh;
@@ -38,5 +38,13 @@ body{
 
     font-size: 5rem;;
     color: white;
+
+}
+
+.over{
+
+    font-size: 5rem;
+    color: red;
+    margin-top: 5vh;
 
 }

@@ -36,6 +36,47 @@ function playgame(){
     stat = document.getElementsByClassName("status")[0];
     lives = Number(document.getElementsByClassName("lives")[0].innerHTML);
 
-    
+    if(guess.length>1 || !isNaN(guess)){
+
+        alert("Please enter a letter.");
+        return;
+
+    }
+
+    if(dword.includes(guess)){
+
+        countguess = mword.split(guess).lenght - 1;
+        while(countguess>0){
+            index = dword.indexof(guess);
+            dword[index] = 0;
+            sword[index] = guess;
+        }
+        stat.innerHTML = sword.join(" ");
+        console.log(sword);
+
+    }
+    else{
+
+        if(sword.includes(guess)){
+
+            alert("You've already guessed " + guess);
+            return;
+
+        }
+
+        else{
+            
+            if(lives==1){
+
+                document.getElementsByClassName("guess")[0].style.display = "none";
+                document.getElementsByClassName("guessbutton")[0].style.display = "none";
+                document.getElementsByClassName("over")[0].innerHTML = "The word was : " + mword + "<br>Better luck next time!";
+
+            }
+            document.getElementsByClassName("lives")[0].innerHTML = lives - 1;
+
+        }
+
+    }
 
 }

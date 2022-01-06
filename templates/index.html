@@ -23,14 +23,15 @@
             <div class="maindiv">
                 <div class="start">
                     <center><img src="/static/images/hangman.png"></img></center>
-                    <center><button class="btn btn-success" onclick="startgame()">START</button></center>
+                    <center><button class="btn btn-success startbutton" onclick="startgame()">START</button></center>
                 </div>
             </div>
 
             <center><div class="game">
                 <div class="status"></div>
                 <div class="life">Lives left : <span class="lives">5</span></div>
-                <center><input type="text" placeholder="Your Guess" class="guess"><button onclick="playgame()">GUESS</button></center>
+                <center><input type="text" placeholder="Your Guess" class="guess form-control"><button onclick="playgame()" class="btn btn-success guessbutton">GUESS</button></center>
+                <div class="over"></div>
             </div></center>
         </div>
     </body>
