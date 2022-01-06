@@ -45,14 +45,22 @@ function playgame(){
 
     if(dword.includes(guess)){
 
-        countguess = mword.split(guess).lenght - 1;
+        countguess = mword.split(guess).length - 1;
         while(countguess>0){
-            index = dword.indexof(guess);
+            index = dword.indexOf(guess);
             dword[index] = 0;
             sword[index] = guess;
+            countguess--;
         }
         stat.innerHTML = sword.join(" ");
-        console.log(sword);
+
+        if(sword.join("")==mword){
+
+            document.getElementsByClassName("guess")[0].style.display = "none";
+            document.getElementsByClassName("guessbutton")[0].style.display = "none";
+            document.getElementsByClassName("victory")[0].innerHTML = "Congratulations! Your guesses were on point";
+
+        }
 
     }
     else{
