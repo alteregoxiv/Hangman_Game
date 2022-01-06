@@ -33,3 +33,10 @@ body{
     display: none;
 
 }
+
+.status , .life{
+
+    font-size: 5rem;;
+    color: white;
+
+}
