@@ -1,3 +1,10 @@
+guess = document.getElementsByClassName("guess")[0];
+guess.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        playgame();
+    }
+});
+
 function startgame(){
 
     var strt = document.getElementsByClassName("start")[0];
