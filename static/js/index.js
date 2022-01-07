@@ -18,13 +18,14 @@ function startgame(){
 }
 
 
-var l , mword , dword , sword;
+var l , mword , dword , sword , already_guessed;
 function initialgame(word){
 
     l = word.length;
     mword = word;
     dword = word.split("");
     sword = Array(l).fill("_");
+    already_guessed = [];
     stat = document.getElementsByClassName("status")[0];
     stat.innerHTML = sword.join(" ");
 
@@ -45,6 +46,7 @@ function playgame(){
 
     if(dword.includes(guess)){
 
+        already_guessed[already_guessed.length] = guess;
         countguess = mword.split(guess).length - 1;
         while(countguess>0){
             index = dword.indexOf(guess);
@@ -65,7 +67,7 @@ function playgame(){
     }
     else{
 
-        if(sword.includes(guess)){
+        if(already_guessed.includes(guess)){
 
             alert("You've already guessed " + guess);
             return;
@@ -82,6 +84,7 @@ function playgame(){
 
             }
             document.getElementsByClassName("lives")[0].innerHTML = lives - 1;
+            already_guessed[already_guessed.length] = guess;
 
         }
 

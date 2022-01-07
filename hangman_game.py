@@ -10,6 +10,7 @@ mdata = jsondata[0]
 ndata = [i for i in mdata]
 l = len(mdata)
 s = ["_" for i in range(l)]
+already_guessed = []
 
 life = 5
 while life>0:
@@ -35,16 +36,18 @@ while life>0:
         time.sleep(1.5)
 
     if q in ndata:
+        already_guessed += [q]
         count = mdata.count(q)
         for i in range(count):
             w = ndata.index(q)
             ndata[w] = 0
             s[w] = q
     else:
-        if q in s:
+        if q in already_guessed:
             print("You've already guessed " + q)
             continue
         print()
+        already_guessed += [q]
         life -= 1
         if life!=0:
             print("Wrong choice!")
