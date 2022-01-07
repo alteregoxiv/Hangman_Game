@@ -1,5 +1,7 @@
 # Hangman_Game
-###Dependencies
+### Dependencies
 1. Flask
 2. requests
+
+
 Sub-dependencies mentioned in `requirement.txt`
