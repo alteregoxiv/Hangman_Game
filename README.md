@@ -84,3 +84,18 @@ python3 hangman_game.py
 ![](/ss/terminal/hangman_terminal_1.png)
 
 ![](/ss/terminal/hangman_terminal_2.png)
+
+### NOTE : 
+Hint option added later
+
+1. Hint : 
+
+![](/ss/flask/hangman_hint_1.png)
+
+2. Few hints used : 
+
+![](/ss/flask/hangman_hint_3.png)
+
+3. All hints used : 
+
+![](/ss/flask/hangman_hint_4.png)
