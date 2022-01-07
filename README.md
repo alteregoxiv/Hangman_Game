@@ -61,11 +61,17 @@ python3 app.py
 
 ![](/ss/flask/hangman_guessing_wrong_again.png)
 
-5. Victory : 
+5. Guessing multiple letters together or numeric characters : 
+
+![](/ss/flask/hangman_not_single_letter.png)
+
+![](/ss/flask/hangman_numeric.png)
+
+6. Victory : 
 
 ![](/ss/flask/hangman_victory.png)
 
-6. Loss : 
+7. Loss : 
 
 ![](/ss/flask/hangman_loss.png)
 
